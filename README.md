@@ -22,20 +22,6 @@ You can replace the default Pokemon character `{squirtle}` with the name of any 
 - **User-Friendly Console Output**
   - Display results in the console, including the Pokemon’s name, weight, and abilities in a neat format.
 
-## Example Code
-```javascript
-fetch('https://pokeapi.co/api/v2/pokemon/squirtle/')
-  .then(response => response.json())
-  .then(data => {
-    const name = data.name;
-    const weight = data.weight;
-    const abilities = data.abilities.map(ability => ability.ability.name);
-
-    console.log(`Name: ${name}`);
-    console.log(`Weight: ${weight}`);
-    console.log(`Abilities: ${abilities.join(', ')}`);
-  })
-  .catch(error => console.error('Error:', error));
 ## How to Use
 1. Replace `{squirtle}` in the API URL with the name of your favorite Pokemon.
 2. Run the script in a JavaScript environment.
